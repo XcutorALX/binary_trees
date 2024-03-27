@@ -56,7 +56,7 @@ binary_tree_t *binary_trees_ancestor(const binary_tree_t *first,
 		return (NULL);
 
 	if (first == second)
-		return (first->parent);
+		return (first);
 
 	return (ancestor_recursive((binary_tree_t *)first, (binary_tree_t *)second));
 }
