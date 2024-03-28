@@ -99,4 +99,5 @@ void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int))
 		result = current->right && enqueue(current->right, &queue);
 		dequeue(queue);
 	}
+	free(queue);
 }
